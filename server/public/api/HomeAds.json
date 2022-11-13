@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Travel ad",
+        "link":"https://www.youtube.com/embed/5s8fs_j2xlY/?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 2,
+        "title": "Travel ad 2",
+        "link":"https://www.youtube.com/embed/EpLX09EwhcY/?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 3,
+        "title": "Travel ad 3",
+        "link":"https://www.youtube.com/embed/mLEd_s3arh4/?autoplay=1&mute=1&controls=0&loop=1"
+    }
+]

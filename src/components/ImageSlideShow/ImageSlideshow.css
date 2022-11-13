@@ -1,0 +1,46 @@
+.slideshow-container {
+  width: 75rem;
+  height: 45rem;
+  box-shadow: 0 0 10px 2px rgb(179, 151, 151);
+}
+
+.slider-mobile {
+  display: none;
+}
+
+.slide-image-one {
+  background-image: url("https://images.pexels.com/photos/306381/pexels-photo-306381.jpeg?cs=srgb&dl=pexels-salah-alawadhi-306381.jpg&fm=jpg");
+  background-size: cover;
+  height: 50rem;
+}
+
+.slide-image-two {
+  background-image: url("https://images.pexels.com/photos/833773/pexels-photo-833773.jpeg?cs=srgb&dl=pexels-andrew-jensen-833773.jpg&fm=jpg");
+  background-size: cover;
+  height: 50rem;
+}
+
+.slide-image-three {
+  background-image: url("https://images.pexels.com/photos/394545/pexels-photo-394545.jpeg?cs=srgb&dl=pexels-baurzhan-kadylzhanov-394545.jpg&fm=jpg");
+  background-size: cover;
+  height: 50rem;
+}
+
+@media screen and (max-width: 900px) {
+  .slideshow-container {
+    box-sizing: border-box;
+    margin: 4rem auto auto;
+    width: 40rem;
+    height: 25rem;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .slider-mobile {
+    display: block;
+    margin: auto;
+    place-items: center;
+  }
+}

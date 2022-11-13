@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Allen Solly ad",
+        "link": "https://www.youtube.com/embed/hX0438nNKUc?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 2,
+        "title": "Travel ad 2",
+        "link":"https://www.youtube.com/embed/EpLX09EwhcY/?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 3,
+        "title": "Brahmastra Trailer",
+        "link":"https://www.youtube.com/embed/V5jVntRVl-0/?autoplay=1&mute=1&controls=0&loop=1"
+    }
+]

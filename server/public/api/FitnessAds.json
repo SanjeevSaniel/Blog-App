@@ -1,0 +1,17 @@
+[
+     {
+        "id": 1,
+        "title": "Exercise",
+        "link":"https://www.youtube.com/embed/Osd4DLpMNp4?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 2,
+        "title":"Fitness",
+        "link":"https://www.youtube.com/embed/uZX14W4rVCU/?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 3,
+        "title": "Activewear",
+        "link":"https://www.youtube.com/embed/CTkrrpF84Rw/?autoplay=1&mute=1&controls=0&loop=1"
+    }
+]

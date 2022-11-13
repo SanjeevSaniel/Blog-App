@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Technology",
+        "link": "https://www.youtube.com/embed/xfJxitgR4ZI?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 2,
+        "title": "Technology",
+        "link":"https://www.youtube.com/embed/svF2HgAccKM/?autoplay=1&mute=1&controls=0&loop=1"
+    },
+    {
+        "id": 3,
+        "title": "Siemens",
+        "link":"https://www.youtube.com/embed/tUP5S4YdEJo/?autoplay=1&mute=1&controls=0&loop=1"
+    }
+]

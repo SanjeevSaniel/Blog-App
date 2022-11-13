@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "url": "https://images.pexels.com/photos/672451/pexels-photo-672451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Lake Louise, AB, Canada",
+        "caption": "Camalig, Bicol, Philippines",
+        "about": "Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-known as a tourist destination. It has a plethora of temples and palaces.",
+        "category": "Travel",
+        "date": "October 3 2022",
+        "link": "https://www.pexels.com/photo/woman-crossing-on-bridge-238631/"
+    },
+    {
+        "id": 2,
+        "url": "https://images.pexels.com/photos/270756/pexels-photo-270756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Lake Louise, AB, Canada",
+        "caption": "Mountains and Trees",
+        "about": "Sindh is vastly underrated and it's a mystery to us why the region isn't more well-known as a tourist destination. It has a plethora of temples and palaces.",
+        "category": "Travel",
+        "date": "October 3 2022",
+        "link": "https://www.pexels.com/photo/a-truck-traveling-on-a-mountain-road-9375817/"
+    },
+    {
+        "id": 3,
+        "url": "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "alt": "Lake Louise, AB, Canada",
+        "caption": "Joshua Tree Overnight Adventure",
+        "about": "Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-known as a tourist destination. It has a plethora of temples and palaces.",
+        "category": "Travel",
+        "date": "October 3 2022",
+        "link": "https://www.pexels.com/photo/woman-crossing-on-bridge-238631/"
+    }
+]

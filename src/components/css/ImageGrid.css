@@ -1,0 +1,14 @@
+.images-list {
+  list-style: none;
+  margin: 0 0.2rem;
+}
+
+.image-item {
+  border-radius: 10px;
+}
+
+.image-list-item-bar {
+  border-radius: 10px;
+  top: 0;
+  box-sizing: border-box;
+}

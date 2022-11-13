@@ -1,0 +1,23 @@
+::selection {
+  color: white;
+  background-color: #f08080;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  margin: auto;
+  /* margin: 0 300px; */
+  max-width: 1230px;
+}
+
+.scroll-arrow {
+  background-color: #f08080;
+  transition: all 0.5s;
+}
+
+.scroll-arrow:hover {
+  box-shadow: 0 0 10px 5px rgb(209, 207, 207);
+}

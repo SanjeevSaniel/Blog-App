@@ -1,0 +1,45 @@
+.like-n-share {
+  position: fixed;
+  margin-left: 5%;
+  margin-top: 18%;
+  z-index: -1;
+}
+
+.like-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.like-button {
+  margin-right: 10px;
+  width: 32px;
+  height: 30px;
+}
+
+.like-count {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.share-container {
+  display: flex;
+  align-items: center;
+}
+
+.share-button {
+  margin-right: 19px;
+  width: 26px;
+  height: 28px;
+}
+
+.share-text {
+  font-size: 1.3rem;
+  color: grey;
+}
+
+@media screen and (max-width: 900px) {
+  .like-n-share {
+    display: none;
+  }
+}

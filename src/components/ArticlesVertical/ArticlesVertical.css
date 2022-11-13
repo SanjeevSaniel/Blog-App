@@ -1,0 +1,206 @@
+.vh-main-container {
+  position: relative;
+}
+
+.vh-heading {
+  font-size: 3.5rem;
+  margin: 5rem 0 0 0;
+}
+
+.vh-hr {
+  margin: 1rem 0 3rem 0;
+  width: 80px;
+  border: 1.5px solid #f08080;
+  background-color: #f08080;
+}
+
+.ad-box {
+  grid-column: 2/3;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+
+  box-shadow: 0 0 5px 2px rgb(218, 217, 217);
+  margin: 0 0 0 8rem;
+  width: 35rem;
+  height: 70rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ad-box iframe {
+  margin-bottom: 2rem;
+  box-shadow: 0 0 5px 2px rgb(209, 207, 207);
+}
+
+.vh-main-container-internal {
+  display: flex;
+  flex-flow: column;
+  max-width: fit-content;
+}
+
+.vh-container {
+  display: grid;
+  grid-template-columns: 25rem 45rem;
+  grid-template-rows: auto;
+}
+
+.vh-container .vh-images {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.vh-container .vh-images-caption {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.vh-images {
+  background-size: cover;
+  width: 22rem;
+  height: 20rem;
+  margin: 2.5rem;
+}
+
+.vh-images-caption {
+  position: relative;
+  color: rgb(25, 24, 24);
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+}
+
+.vh-images-caption .title {
+  font-size: 2.5rem;
+}
+
+.vh-images-caption p {
+  color: rgb(153, 152, 152);
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  max-width: 40rem;
+  text-align: left;
+}
+
+.vh-images-date {
+  position: absolute;
+  bottom: 2rem;
+  margin: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.category {
+  color: rgb(25, 24, 24);
+  font-weight: 700;
+}
+
+.load-more-btn {
+  display: flex;
+  align-items: center;
+  margin: 2rem 3rem 4rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 5px;
+  color: grey;
+  background: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  width: fit-content;
+}
+
+.load-more-btn img {
+  margin: 0 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+.load-more-btn:hover {
+  background-color: antiquewhite;
+  box-shadow: 0 0 10px 2px #f7dcdc;
+}
+
+@media screen and (max-width: 900px) {
+  .vh-main-container {
+    display: flex;
+    flex-flow: column;
+    padding: 0 2rem;
+    height: fit-content;
+  }
+
+  .vh-header {
+    margin: auto;
+  }
+
+  .vh-main-container-internal {
+    margin: auto;
+    place-items: center;
+  }
+
+  .vh-container {
+    display: flex;
+    flex-flow: column;
+    place-items: center;
+    height: fit-content;
+  }
+
+  .vh-images {
+    width: 30rem;
+    height: 25rem;
+    margin: 2rem 0 0;
+    /* margin: 2.5rem; */
+  }
+
+  .vh-images-caption {
+    position: relative;
+    color: rgb(25, 24, 24);
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    width: 30rem;
+    /* height: 25rem; */
+  }
+
+  .description {
+    color: rgb(153, 152, 152);
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    max-width: 40rem;
+    padding: 0 0 5rem;
+    text-align: left;
+  }
+
+  .load-more-btn {
+    margin: 1rem auto 5rem;
+  }
+
+  /* .vh-images-date {
+    position: relative;
+    font-size: 1.4rem;
+  } */
+
+  .ad-box {
+    /* grid-column: 2/3; */
+    /* position: absolute; */
+    /* right: 0; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: auto;
+
+    box-shadow: 0 0 5px 2px rgb(218, 217, 217);
+    /* margin: 0 0 0 8rem; */
+    width: 35rem;
+    height: 70rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}

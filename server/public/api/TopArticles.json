@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "imageURL": "https://images.pexels.com/photos/238631/pexels-photo-238631.jpeg?cs=srgb&dl=pexels-flo-maderebner-238631.jpg&fm=jpg",
+        "link": "https://www.pexels.com/photo/woman-crossing-on-bridge-238631/",
+        "title": "Tambon Nong Chaeng, Thailand",
+        "category": "Travel",
+        "date": "September 9 2022"
+    },
+    {
+        "id": 2,
+        "imageURL": "https://images.pexels.com/photos/601174/pexels-photo-601174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "link": "https://images.pexels.com/photos/601174/pexels-photo-601174.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-601174.jpg&fm=jpg&_gl=1*59md6o*_ga*MTg2Nzc4MDA5MC4xNjY4Mjg2MjAx*_ga_8JE65Q40S6*MTY2ODI4NjIwMi4xLjEuMTY2ODI4NjI0MC4wLjAuMA..",
+        "title": "Mount Fuji, Japan",
+        "category": "Travel",
+        "date": "September 9 2022"
+    },
+    {
+        "id": 3,
+        "imageURL": "https://images.pexels.com/photos/62600/pexels-photo-62600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "link": "https://www.pexels.com/photo/red-rocks-62600/",
+        "title": "Moab, UT, United States",
+        "category": "Travel",
+        "date": "September 9 2022"
+    }
+]

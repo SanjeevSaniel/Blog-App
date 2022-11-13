@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "imageURL": "https://upload.wikimedia.org/wikipedia/en/2/23/Bhool_Bhulaiyaa_2_film_poster.jpg",
+        "link": "https://www.google.com/search?client=firefox-b-d&q=ra+one",
+        "title": "Bhool Bhulaiyaa 2",
+        "category": "Bollywood",
+        "date": "May 29 2022"
+    },
+    {
+        "id": 2,
+        "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Runway_34_poster.jpg/220px-Runway_34_poster.jpg",
+        "link": "https://www.google.com/search?client=firefox-b-d&q=kal+ho+na+ho",
+        "title": "Runway 34",
+        "category": "Bollywood",
+        "date": "July 25 2022"
+    },
+    {
+        "id": 3,
+        "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/83_film_poster.jpg/220px-83_film_poster.jpg",
+        "link": "https://www.google.com/search?q=83+%28film%29&cs=1&biw=1016&bih=951&sxsrf=ALiCzsauf3CjPYBAKM6Q5jRLnO4lmZOjAw%3A1668283573382&ei=tfxvY4v8FoybseMPtt24oAU&ved=0ahUKEwjLqprOuKn7AhWMTWwGHbYuDlQQ4dUDCA8&oq=83+%28film%29&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQDEoECEEYAEoECEYYAFAAWABgAGgAcAB4AIABAIgBAJIBAJgBAA&sclient=gws-wiz-serp",
+        "title": "83",
+        "category": "Bollywood",
+        "date": "March 29 2022"
+    }
+
+]

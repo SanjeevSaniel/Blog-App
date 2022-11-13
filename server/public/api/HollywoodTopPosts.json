@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Top_Gun_Maverick_Poster.jpg/220px-Top_Gun_Maverick_Poster.jpg",
+        "link": "https://www.google.com/search?client=firefox-b-d&q=top+gun+maverick",
+        "title": "Top Gun: Maverick",
+        "category": "Hollywood",
+        "date": "May 7 2022"
+    },
+    {
+        "id": 2,
+        "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg/220px-Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg",
+        "link": "https://www.google.com/search?client=firefox-b-d&q=marvel+multiverse+doctor+strange",
+        "title": "Doctor Strange: In The Multiverse Of Madness",
+        "category": "Hollywood",
+        "date": "May 7 2022"
+    },
+    {
+        "id": 3,
+        "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Top_Gun_Maverick_Poster.jpg/220px-Top_Gun_Maverick_Poster.jpg",
+        "link": "https://www.google.com/search?client=firefox-b-d&q=top+gun+maverick",
+        "title": "Top Gun: Maverick",
+        "category": "Hollywood",
+        "date": "May 7 2022"
+    }
+]
