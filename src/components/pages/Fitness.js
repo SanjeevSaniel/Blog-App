@@ -3,31 +3,37 @@ import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 
-// const ads = require("../API_Data/FitnessAds.json");
-// const articles = require("../API_Data/FitnessArticles.json");
-
 const Fitness = () => {
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
 
+  async function fetchData(api, setter) {
+    let response = await axios.get(api);
+    let data = await response.data;
+    setter(data);
+  }
+
   useEffect(() => {
-    axios.get("/api/Fitness.json").then((response) => {
-      setArticles(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/Fitness.json",
+      setArticles
+    );
   }, [articles]);
 
   useEffect(() => {
-    axios.get("/api/FitnessAds.json").then((response) => {
-      setAds(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/FitnessAds.json",
+      setAds
+    );
   }, [ads]);
 
-   useEffect(() => {
-     axios.get("/api/FitnessTopPosts.json").then((response) => {
-       setTopPosts(response.data);
-     });
-   }, [topPosts]);
+  useEffect(() => {
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/FitnessTopPosts.json",
+      setTopPosts
+    );
+  }, [topPosts]);
 
   return (
     <div className="Fitness">

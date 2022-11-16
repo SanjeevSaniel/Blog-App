@@ -61,9 +61,9 @@ const ArticlesVertical = ({
 
         <div className="ad-box">
           <h2>Advertisement</h2> <br />
-          {ads.map((data) => {
+          {ads.map((data, index) => {
             return (
-              <iframe
+              <iframe key={index}
                 title={data.title}
                 src={data.link}
                 frameBorder="0"

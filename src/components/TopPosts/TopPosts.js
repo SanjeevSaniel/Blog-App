@@ -25,9 +25,9 @@ const TopPosts = ({ photo, title, category, date, articleLink, topPosts }) => {
         </div>
       </div>
 
-      {topPosts.map((post) => {
+      {topPosts.map((post, index) => {
         return (
-          <React.Fragment>
+          <div key={index}>
             <hr className="tp-hr-wide" />
             <div className="tp-posts-container-small">
               <div className="tp-container-small">
@@ -49,7 +49,7 @@ const TopPosts = ({ photo, title, category, date, articleLink, topPosts }) => {
                 </p>
               </div>
             </div>
-          </React.Fragment>
+          </div>
         );
       })}
     </div>
