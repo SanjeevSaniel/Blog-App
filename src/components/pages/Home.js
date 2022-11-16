@@ -21,10 +21,6 @@ const Home = () => {
   }
 
   useEffect(() => {
-    // axios.get("./api/Articles.json").then((response) => {
-    //   setArticlesVertical(response.data);
-    // });
-
     fetchData(
       "https://prepbytes-blog-app-server.herokuapp.com/api/Articles.json",
       setArticlesVertical
@@ -32,10 +28,6 @@ const Home = () => {
   }, [articlesVertical]);
 
   useEffect(() => {
-    // axios.get("./api/ArticlesHorizontal.json").then((response) => {
-    //   setArticlesHorizontal(response.data);
-    // });
-
     fetchData(
       "https://prepbytes-blog-app-server.herokuapp.com/api/ArticlesHorizontal.json",
       setArticlesHorizontal
@@ -43,10 +35,6 @@ const Home = () => {
   }, [articlesHorizontal]);
 
   useEffect(() => {
-    // axios.get("./api/SliderImages.json").then((response) => {
-    //   setImages(response.data);
-    // });
-
     fetchData(
       "https://prepbytes-blog-app-server.herokuapp.com/api/SliderImages.json",
       setImages
@@ -54,10 +42,6 @@ const Home = () => {
   }, [images]);
 
   useEffect(() => {
-    // axios.get("/api/HomeAds.json").then((response) => {
-    //   setAds(response.data);
-    // });
-
     fetchData(
       "https://prepbytes-blog-app-server.herokuapp.com/api/HomeAds.json",
       setAds
@@ -65,9 +49,10 @@ const Home = () => {
   }, [ads]);
 
   useEffect(() => {
-    axios.get("/api/TopArticles.json").then((response) => {
-      setTopPosts(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/TopArticles.json",
+      setTopPosts
+    );
   }, [topPosts]);
 
   // if (!articles || !ads || (!articles && !ads)) return null;

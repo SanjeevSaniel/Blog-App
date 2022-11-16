@@ -3,30 +3,36 @@ import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 
-// const ads = require("../API_Data/HollywoodAds.json");
-// const articles = require("../API_Data/HollywoodArticles.json");
-
 const Hollywood = () => {
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
 
+  async function fetchData(api, setter) {
+    let response = await axios.get(api);
+    let data = await response.data;
+    setter(data);
+  }
+
   useEffect(() => {
-    axios.get("./api/Hollywood.json").then((response) => {
-      setArticles(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/Hollywood.json",
+      setArticles
+    );
   }, [articles]);
 
   useEffect(() => {
-    axios.get("/api/HollywoodAds.json").then((response) => {
-      setAds(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/HollywoodAds.json",
+      setAds
+    );
   }, [ads]);
 
   useEffect(() => {
-    axios.get("/api/HollywoodTopPosts.json").then((response) => {
-      setTopPosts(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/HollywoodTopPosts.json",
+      setTopPosts
+    );
   }, [topPosts]);
 
   return (

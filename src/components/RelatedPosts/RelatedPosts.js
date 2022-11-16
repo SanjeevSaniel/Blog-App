@@ -1,22 +1,35 @@
 import Author from "../Author/Author";
 import "../RelatedPosts/RelatedPosts.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const RelatedPosts = () => {
-  // <section className="related-posts">
-  //   <div className="post">
-  //     <p className="post-tag">Related reads</p>
-  //     <img
-  //       className="post-image"
-  //       src="https://images.pexels.com/photos/1634840/pexels-photo-1634840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  //       alt=""
-  //     />
-  //   </div>
-  // </section>
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://prepbytes-blog-app-server.herokuapp.com/api/RelatedPosts.json"
+      )
+      .then((response) => setPosts(response.data));
+  }, [posts]);
+
   return (
     <div className="related-posts-container">
       <p className="heading">More From Siren</p>
       <section className="related-posts">
-        <div className="post">
+        {posts.map((post, index) => {
+          return (
+            <div key={index} className="post">
+              <p className="post-tag">Related reads</p>
+              <img className="post-image" src={post.imageURL} alt="" />
+              <h1>{post.location}</h1>
+              <Author author={post.author} avatar={post.avatar} />
+            </div>
+          );
+        })}
+
+        {/* <div className="post">
           <p className="post-tag">Related reads</p>
           <img
             className="post-image"
@@ -29,6 +42,7 @@ const RelatedPosts = () => {
             avatar="https://images.pexels.com/users/avatars/558609/james-wheeler-590.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=1"
           />
         </div>
+
         <div className="post">
           <p className="post-tag">Related reads</p>
           <img
@@ -42,6 +56,7 @@ const RelatedPosts = () => {
             avatar="https://images.pexels.com/users/avatars/264958/the-happiest-face-810.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=1"
           />
         </div>
+
         <div className="post">
           <p className="post-tag">Related reads</p>
           <img
@@ -54,7 +69,7 @@ const RelatedPosts = () => {
             author="Emma Miertschin"
             avatar="https://images.pexels.com/users/avatars/271960732/emma-miertschin-253.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=1"
           />
-        </div>
+        </div> */}
       </section>
     </div>
   );

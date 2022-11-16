@@ -3,30 +3,36 @@ import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 
-// const ads = require("../API_Data/TechnologyAds.json");
-// const articles = require("../API_Data/TechnologyArticles.json");
-
 const Technology = () => {
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
 
+  async function fetchData(api, setter) {
+    let response = await axios.get(api);
+    let data = await response.data;
+    setter(data);
+  }
+
   useEffect(() => {
-    axios.get("./api/Technology.json").then((response) => {
-      setArticles(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/Technology.json",
+      setArticles
+    );
   }, [articles]);
 
   useEffect(() => {
-    axios.get("/api/TechnologyAds.json").then((response) => {
-      setAds(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/TechnologyAds.json",
+      setAds
+    );
   }, [ads]);
 
   useEffect(() => {
-    axios.get("/api/TechnologyTopPosts.json").then((response) => {
-      setTopPosts(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/TechnologyTopPosts.json",
+      setTopPosts
+    );
   }, [topPosts]);
 
   return (

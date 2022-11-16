@@ -3,30 +3,36 @@ import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 
-// const ads = require("../API_Data/FoodAds.json");
-// const articles = require("../API_Data/FoodArticles.json");
-
 const Food = () => {
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
 
+  async function fetchData(api, setter) {
+    let response = await axios.get(api);
+    let data = await response.data;
+    setter(data);
+  }
+
   useEffect(() => {
-    axios.get("/api/Food.json").then((response) => {
-      setArticles(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/Food.json",
+      setArticles
+    );
   }, [articles]);
 
   useEffect(() => {
-    axios.get("/api/FoodAds.json").then((response) => {
-      setAds(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/FoodAds.json",
+      setAds
+    );
   }, [ads]);
 
   useEffect(() => {
-    axios.get("/api/FoodTopPosts.json").then((response) => {
-      setTopPosts(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/FoodTopPosts.json",
+      setTopPosts
+    );
   }, [topPosts]);
 
   if (!articles || !ads || (!articles && !ads)) return null;

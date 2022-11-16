@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "imageURL": "https://images.pexels.com/photos/415471/pexels-photo-415471.jpeg?cs=srgb&dl=pexels-james-wheeler-415471.jpg&fm=jpg",
+        "location": "Pemberton, BC, Canada",
+        "author": "James Wheeler",
+        "avatar": "https://images.pexels.com/users/avatars/558609/james-wheeler-590.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=1"
+    },
+    {
+        "id": 2,
+        "imageURL": "https://images.pexels.com/photos/804131/pexels-photo-804131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "location": "Hamden, CT, United States",
+        "author": "Happy Face",
+        "avatar": "https://images.pexels.com/users/avatars/264958/the-happiest-face-810.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=1"
+    },
+    {
+        "id": 3,
+        "imageURL": "https://images.pexels.com/photos/12935467/pexels-photo-12935467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "location": "Canada",
+        "author": "Emma Miertschin",
+        "avatar": "https://images.pexels.com/users/avatars/271960732/emma-miertschin-253.jpeg?auto=compress&fit=crop&h=130&w=130&dpr=1"
+    }
+]
