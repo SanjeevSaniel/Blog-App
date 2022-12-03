@@ -16,21 +16,21 @@ const Hollywood = () => {
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/Hollywood.json",
+      "https://good-blue-leopard-gown.cyclic.app/HollywoodArticles",
       setArticles
     );
   }, [articles]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/HollywoodAds.json",
+      "https://good-blue-leopard-gown.cyclic.app/HollywoodAds",
       setAds
     );
   }, [ads]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/HollywoodTopPosts.json",
+      "https://good-blue-leopard-gown.cyclic.app/HollywoodTopPosts",
       setTopPosts
     );
   }, [topPosts]);
