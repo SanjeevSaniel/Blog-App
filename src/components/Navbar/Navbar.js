@@ -124,6 +124,7 @@ const Navbar = () => {
                             id="composition-menu"
                             aria-labelledby="composition-button"
                             onKeyDown={handleListKeyDown}
+                          
                           >
                             <MenuItem onClick={handleClose}>
                               <NavLink className="nav-links" to="/">

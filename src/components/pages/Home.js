@@ -22,38 +22,70 @@ const Home = () => {
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/Articles.json",
+      "https://good-blue-leopard-gown.cyclic.app/Articles",
       setArticlesVertical
     );
   }, [articlesVertical]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/ArticlesHorizontal.json",
+      "https://good-blue-leopard-gown.cyclic.app/HomeLatest",
       setArticlesHorizontal
     );
   }, [articlesHorizontal]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/SliderImages.json",
+      "https://good-blue-leopard-gown.cyclic.app/HomeSlider",
       setImages
     );
   }, [images]);
 
   useEffect(() => {
-    fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/HomeAds.json",
-      setAds
-    );
+    fetchData("https://good-blue-leopard-gown.cyclic.app/HomeAds", setAds);
   }, [ads]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/TopArticles.json",
+      "https://good-blue-leopard-gown.cyclic.app/HomeTopPosts",
       setTopPosts
     );
   }, [topPosts]);
+
+  // useEffect(() => {
+  //   fetchData(
+  //     "https://prepbytes-blog-app-server.herokuapp.com/api/Articles.json",
+  //     setArticlesVertical
+  //   );
+  // }, [articlesVertical]);
+
+  // useEffect(() => {
+  //   fetchData(
+  //     "https://prepbytes-blog-app-server.herokuapp.com/api/ArticlesHorizontal.json",
+  //     setArticlesHorizontal
+  //   );
+  // }, [articlesHorizontal]);
+
+  // useEffect(() => {
+  //   fetchData(
+  //     "https://prepbytes-blog-app-server.herokuapp.com/api/SliderImages.json",
+  //     setImages
+  //   );
+  // }, [images]);
+
+  // useEffect(() => {
+  //   fetchData(
+  //     "https://prepbytes-blog-app-server.herokuapp.com/api/HomeAds.json",
+  //     setAds
+  //   );
+  // }, [ads]);
+
+  // useEffect(() => {
+  //   fetchData(
+  //     "https://prepbytes-blog-app-server.herokuapp.com/api/TopArticles.json",
+  //     setTopPosts
+  //   );
+  // }, [topPosts]);
 
   // if (!articles || !ads || (!articles && !ads)) return null;
 

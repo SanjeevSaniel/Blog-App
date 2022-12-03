@@ -40,7 +40,7 @@ const TopPosts = ({ photo, title, category, date, articleLink, topPosts }) => {
                     <span className="title">
                       <a href={post.link}>{post.title}</a>
                     </span>
-                    <span className="number-2">{post.id + 1}</span>
+                    <span className="number-2">{index + 2}</span>
                   </span>
                 </div>
                 <p className="tp-images-date">

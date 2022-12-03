@@ -17,21 +17,18 @@ const Bollywood = () => {
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/Bollywood.json",
+      "https://good-blue-leopard-gown.cyclic.app/BollywoodArticles",
       setArticles
     );
   }, [articles]);
 
   useEffect(() => {
-    fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/BollywoodAds.json",
-      setAds
-    );
+    fetchData("https://good-blue-leopard-gown.cyclic.app/BollywoodAds", setAds);
   }, [ads]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/BollywoodTopPosts.json",
+      "https://good-blue-leopard-gown.cyclic.app/BollywoodTopPosts",
       setTopPosts
     );
   }, [topPosts]);

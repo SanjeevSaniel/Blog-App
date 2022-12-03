@@ -9,7 +9,7 @@ const ImageSlideshow = ({ images }) => {
           width={750}
           height={450}
           images={images}
-          showBullets={false}
+          showBullets={true}
           showNavs={true}
           autoPlay={true}
           slideDuration={2}
