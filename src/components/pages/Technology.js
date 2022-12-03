@@ -16,21 +16,21 @@ const Technology = () => {
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/Technology.json",
+      "https://good-blue-leopard-gown.cyclic.app/TechnologyArticles",
       setArticles
     );
   }, [articles]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/TechnologyAds.json",
+      "https://good-blue-leopard-gown.cyclic.app/TechnologyAds",
       setAds
     );
   }, [ads]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/TechnologyTopPosts.json",
+      "https://good-blue-leopard-gown.cyclic.app/TechnologyTopPosts",
       setTopPosts
     );
   }, [topPosts]);
