@@ -16,21 +16,18 @@ const Fitness = () => {
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/Fitness.json",
+      "https://good-blue-leopard-gown.cyclic.app/FitnessArticles",
       setArticles
     );
   }, [articles]);
 
   useEffect(() => {
-    fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/FitnessAds.json",
-      setAds
-    );
+    fetchData("https://good-blue-leopard-gown.cyclic.app/FitnessAds", setAds);
   }, [ads]);
 
   useEffect(() => {
     fetchData(
-      "https://prepbytes-blog-app-server.herokuapp.com/api/FitnessTopPosts.json",
+      "https://good-blue-leopard-gown.cyclic.app/FitnessTopPosts",
       setTopPosts
     );
   }, [topPosts]);
