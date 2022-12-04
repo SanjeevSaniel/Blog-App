@@ -8,11 +8,17 @@ const RelatedPosts = () => {
 
   useEffect(() => {
     axios
-      .get(
-        "https://prepbytes-blog-app-server.herokuapp.com/api/RelatedPosts.json"
-      )
+      .get("https://good-blue-leopard-gown.cyclic.app/RelatedPosts")
       .then((response) => setPosts(response.data));
   }, [posts]);
+
+  // useEffect(() => {
+  //   axios
+  //     .get(
+  //       "https://prepbytes-blog-app-server.herokuapp.com/api/RelatedPosts.json"
+  //     )
+  //     .then((response) => setPosts(response.data));
+  // }, [posts]);
 
   return (
     <div className="related-posts-container">
