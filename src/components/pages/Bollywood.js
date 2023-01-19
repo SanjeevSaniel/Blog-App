@@ -4,7 +4,7 @@ import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 import Photo from "../Images/Brahmastra.jpg";
 
-const Bollywood = () => {
+const Bollywood = ({ url }) => {
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
@@ -16,11 +16,8 @@ const Bollywood = () => {
   }
 
   useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/BollywoodArticles",
-      setArticles
-    );
-  }, [articles]);
+    fetchData(`${url}BollywoodArticles`, setArticles);
+  }, [articles, url]);
 
   useEffect(() => {
     fetchData("https://good-blue-leopard-gown.cyclic.app/BollywoodAds", setAds);

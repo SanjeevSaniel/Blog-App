@@ -14,13 +14,15 @@ import Information2 from "./components/Information/Information2/Information2";
 import Information3 from "./components/Information/Information3/Information3";
 
 function App() {
+  const URL = "https://good-blue-leopard-gown.cyclic.app/";
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<Home />}></Route>
-            <Route path="/Bollywood" element={<Bollywood />}></Route>
+            <Route path="/Bollywood" element={<Bollywood url={URL} />}></Route>
             <Route path="/Technology" element={<Technology />}></Route>
             <Route path="/Hollywood" element={<Hollywood />}></Route>
             <Route path="/Fitness" element={<Fitness />}></Route>
