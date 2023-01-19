@@ -21,7 +21,7 @@ const AuthorNsocial = (props) => {
         </div>
       </div> */}
       <div className="social-links">
-        <SocialFollow instagram={props.instagram}/>
+        <SocialFollow instagram={props.instagram} />
       </div>
     </div>
   );

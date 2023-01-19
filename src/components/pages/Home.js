@@ -2,10 +2,10 @@ import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ImageGallery from "../utilities/ImageGallery/ImageGallery";
-import ArticlesHorizontal from "../ArticlesHorizontal/ArticlesHorizontal";
-import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
+import ArticlesHorizontal from "../common/ArticlesHorizontal/ArticlesHorizontal";
+import ArticlesVertical from "../common/ArticlesVertical/ArticlesVertical";
 import ImageSlideshow from "../ImageSlideShow/ImageSlideShow";
-import LatestStories from "../LatestStories/LatestStories";
+import LatestStories from "../common/LatestStories/LatestStories";
 
 import { URLContext } from "../../App";
 
@@ -26,11 +26,23 @@ const Home = () => {
 
   useEffect(() => {
     fetchData(`${URL}Articles`, setArticlesVertical);
+  }, [articlesVertical, URL]);
+
+  useEffect(() => {
     fetchData(`${URL}HomeLatest`, setArticlesHorizontal);
+  }, [articlesHorizontal, URL]);
+
+  useEffect(() => {
     fetchData(`${URL}HomeSlider`, setImages);
+  }, [images, URL]);
+
+  useEffect(() => {
     fetchData(`${URL}HomeAds`, setAds);
+  }, [ads, URL]);
+
+  useEffect(() => {
     fetchData(`${URL}HomeTopPosts`, setTopPosts);
-  }, [articlesVertical, articlesHorizontal, images, ads, topPosts, URL]);
+  }, [topPosts, URL]);
 
   return (
     <div className="Home">

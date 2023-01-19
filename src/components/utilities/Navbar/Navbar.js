@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import React from "react";
-import "../Navbar/Navbar.css";
+import "./Navbar.css";
 import { Outlet, NavLink } from "react-router-dom";
 import Divider from "@mui/material/Divider";
 import { Link } from "react-router-dom";

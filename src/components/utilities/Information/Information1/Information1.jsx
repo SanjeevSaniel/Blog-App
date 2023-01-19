@@ -2,13 +2,13 @@ import { useState } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Divider from "@mui/material/Divider";
 import NavbarWithBtn from "../../../NavbarWithBtn/NavbarWithBtn";
-import LikeNshare from "../../../LikeNshare/LikeNshare";
-import AuthorNsocial from "../../../Author-N-Social/AuthorNsocial";
-import Author from "../../../Author/Author";
-import Like from "../../../LikeNshare/images/rythm.png";
+import LikeNshare from "../../../common/LikeNshare/LikeNshare";
+import AuthorNsocial from "../../../common/Author-N-Social/AuthorNsocial";
+import Author from "../../../common/Author/Author";
+import Like from "../../../common/LikeNshare/images/rythm.png";
 import image1 from "../../ImageGallery/images/pexels-daniel-shi-2886202.jpg";
 import video1 from "../Information1/b5482bab.mp4";
-import RelatedPosts from "../../../RelatedPosts/RelatedPosts";
+import RelatedPosts from "../../../common/RelatedPosts/RelatedPosts";
 import "../Information1/Information1.css";
 
 const Information1 = () => {

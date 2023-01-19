@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
-import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
+import ArticlesVertical from "../common/ArticlesVertical/ArticlesVertical";
 import { URLContext } from "../../App";
 
 const Hollywood = () => {

@@ -1,5 +1,5 @@
-import Author from "../Author/Author";
-import "../RelatedPosts/RelatedPosts.css";
+import Author from "../../Author/Author";
+import "./RelatedPosts.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -12,13 +12,6 @@ const RelatedPosts = () => {
       .then((response) => setPosts(response.data));
   }, [posts]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       "https://prepbytes-blog-app-server.herokuapp.com/api/RelatedPosts.json"
-  //     )
-  //     .then((response) => setPosts(response.data));
-  // }, [posts]);
 
   return (
     <div className="related-posts-container">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./../../Navbar/Navbar";
+import Navbar from "./../../utilities/Navbar/Navbar";
 
 import Home from "./../../pages/Home";
 import Bollywood from "./../../pages/Bollywood";
