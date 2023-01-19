@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
+import { URLContext } from "../../App";
 
 const Technology = () => {
+  const URL = useContext(URLContext);
+
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
@@ -15,25 +18,10 @@ const Technology = () => {
   }
 
   useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/TechnologyArticles",
-      setArticles
-    );
-  }, [articles]);
-
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/TechnologyAds",
-      setAds
-    );
-  }, [ads]);
-
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/TechnologyTopPosts",
-      setTopPosts
-    );
-  }, [topPosts]);
+    fetchData(`${URL}TechnologyArticles`, setArticles);
+    fetchData(`${URL}TechnologyAds`, setAds);
+    fetchData(`${URL}TechnologyTopPosts`, setTopPosts);
+  }, [articles, ads, topPosts, URL]);
 
   return (
     <div className="Technology">

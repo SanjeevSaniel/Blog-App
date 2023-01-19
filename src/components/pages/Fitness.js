@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
+import { URLContext } from "../../App";
 
 const Fitness = () => {
+  const URL = useContext(URLContext);
+
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
@@ -15,22 +18,10 @@ const Fitness = () => {
   }
 
   useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/FitnessArticles",
-      setArticles
-    );
-  }, [articles]);
-
-  useEffect(() => {
-    fetchData("https://good-blue-leopard-gown.cyclic.app/FitnessAds", setAds);
-  }, [ads]);
-
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/FitnessTopPosts",
-      setTopPosts
-    );
-  }, [topPosts]);
+    fetchData(`${URL}FitnessArticles`, setArticles);
+    fetchData(`${URL}FitnessAds`, setAds);
+    fetchData(`${URL}FitnessTopPosts`, setTopPosts);
+  }, [articles, ads, topPosts, URL]);
 
   return (
     <div className="Fitness">

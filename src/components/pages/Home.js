@@ -32,52 +32,6 @@ const Home = () => {
     fetchData(`${URL}HomeTopPosts`, setTopPosts);
   }, [articlesVertical, articlesHorizontal, images, ads, topPosts, URL]);
 
-  // useEffect(() => {}, [, URL]);
-
-  // useEffect(() => {}, [images, URL]);
-
-  // useEffect(() => {}, [ads, URL]);
-
-  // useEffect(() => {
-  // }, [topPosts, URL]);
-
-  // useEffect(() => {
-  //   fetchData(
-  //     "https://prepbytes-blog-app-server.herokuapp.com/api/Articles.json",
-  //     setArticlesVertical
-  //   );
-  // }, [articlesVertical]);
-
-  // useEffect(() => {
-  //   fetchData(
-  //     "https://prepbytes-blog-app-server.herokuapp.com/api/ArticlesHorizontal.json",
-  //     setArticlesHorizontal
-  //   );
-  // }, [articlesHorizontal]);
-
-  // useEffect(() => {
-  //   fetchData(
-  //     "https://prepbytes-blog-app-server.herokuapp.com/api/SliderImages.json",
-  //     setImages
-  //   );
-  // }, [images]);
-
-  // useEffect(() => {
-  //   fetchData(
-  //     "https://prepbytes-blog-app-server.herokuapp.com/api/HomeAds.json",
-  //     setAds
-  //   );
-  // }, [ads]);
-
-  // useEffect(() => {
-  //   fetchData(
-  //     "https://prepbytes-blog-app-server.herokuapp.com/api/TopArticles.json",
-  //     setTopPosts
-  //   );
-  // }, [topPosts]);
-
-  // if (!articles || !ads || (!articles && !ads)) return null;
-
   return (
     <div className="Home">
       <ImageGallery />

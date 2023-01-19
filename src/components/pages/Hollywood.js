@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
+import { URLContext } from "../../App";
 
 const Hollywood = () => {
+  const URL = useContext(URLContext);
+
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
@@ -15,25 +18,13 @@ const Hollywood = () => {
   }
 
   useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/HollywoodArticles",
-      setArticles
-    );
-  }, [articles]);
-
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/HollywoodAds",
-      setAds
-    );
-  }, [ads]);
-
-  useEffect(() => {
+    fetchData(`${URL}HollywoodArticles`, setArticles);
+    fetchData(`${URL}HollywoodAds`, setAds);
     fetchData(
       "https://good-blue-leopard-gown.cyclic.app/HollywoodTopPosts",
       setTopPosts
     );
-  }, [topPosts]);
+  }, [articles, ads, topPosts, URL]);
 
   return (
     <div className="Hollywood">

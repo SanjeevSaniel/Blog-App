@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
+import { URLContext } from "../../App";
 
 const Food = () => {
+  const URL = useContext(URLContext);
+
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
@@ -15,22 +18,10 @@ const Food = () => {
   }
 
   useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/FoodArticles",
-      setArticles
-    );
-  }, [articles]);
-
-  useEffect(() => {
-    fetchData("https://good-blue-leopard-gown.cyclic.app/FoodAds", setAds);
-  }, [ads]);
-
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/FoodTopPosts",
-      setTopPosts
-    );
-  }, [topPosts]);
+    fetchData(`${URL}FoodArticles`, setArticles);
+    fetchData(`${URL}FoodAds`, setAds);
+    fetchData(`${URL}FoodTopPosts`, setTopPosts);
+  }, [articles, ads, topPosts, URL]);
 
   if (!articles || !ads || (!articles && !ads)) return null;
 
