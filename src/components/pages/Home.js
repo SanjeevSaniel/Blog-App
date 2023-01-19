@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ImageGallery from "../utilities/ImageGallery/ImageGallery";
@@ -7,7 +7,11 @@ import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 import ImageSlideshow from "../ImageSlideShow/ImageSlideShow";
 import LatestStories from "../LatestStories/LatestStories";
 
+import { URLContext } from "../../App";
+
 const Home = () => {
+  const URL = useContext(URLContext);
+
   const [articlesVertical, setArticlesVertical] = useState([]);
   const [articlesHorizontal, setArticlesHorizontal] = useState([]);
   const [images, setImages] = useState([]);
@@ -21,36 +25,21 @@ const Home = () => {
   }
 
   useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/Articles",
-      setArticlesVertical
-    );
-  }, [articlesVertical]);
+    fetchData(`${URL}Articles`, setArticlesVertical);
+    fetchData(`${URL}HomeLatest`, setArticlesHorizontal);
+    fetchData(`${URL}HomeSlider`, setImages);
+    fetchData(`${URL}HomeAds`, setAds);
+    fetchData(`${URL}HomeTopPosts`, setTopPosts);
+  }, [articlesVertical, articlesHorizontal, images, ads, topPosts, URL]);
 
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/HomeLatest",
-      setArticlesHorizontal
-    );
-  }, [articlesHorizontal]);
+  // useEffect(() => {}, [, URL]);
 
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/HomeSlider",
-      setImages
-    );
-  }, [images]);
+  // useEffect(() => {}, [images, URL]);
 
-  useEffect(() => {
-    fetchData("https://good-blue-leopard-gown.cyclic.app/HomeAds", setAds);
-  }, [ads]);
+  // useEffect(() => {}, [ads, URL]);
 
-  useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/HomeTopPosts",
-      setTopPosts
-    );
-  }, [topPosts]);
+  // useEffect(() => {
+  // }, [topPosts, URL]);
 
   // useEffect(() => {
   //   fetchData(

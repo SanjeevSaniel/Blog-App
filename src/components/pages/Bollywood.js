@@ -1,10 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 import Photo from "../Images/Brahmastra.jpg";
+import { URLContext } from "../../App";
 
-const Bollywood = ({ url }) => {
+const Bollywood = () => {
+  const URL = useContext(URLContext);
+
   const [articles, setArticles] = useState([]);
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
@@ -16,16 +19,10 @@ const Bollywood = ({ url }) => {
   }
 
   useEffect(() => {
-    fetchData(`${url}BollywoodArticles`, setArticles);
-  }, [articles, url]);
-
-  useEffect(() => {
-    fetchData(`${url}BollywoodAds`, setAds);
-  }, [ads, url]);
-
-  useEffect(() => {
-    fetchData(`${url}BollywoodTopPosts`, setTopPosts);
-  }, [topPosts, url]);
+    fetchData(`${URL}BollywoodArticles`, setArticles);
+    fetchData(`${URL}BollywoodAds`, setAds);
+    fetchData(`${URL}BollywoodTopPosts`, setTopPosts);
+  }, [articles, ads, topPosts, URL]);
 
   return (
     <div className="Bollywood">

@@ -11,19 +11,17 @@ import Fitness from "./../../pages/Fitness";
 import Food from "./../../pages/Food";
 import Error from "./../../pages/Error";
 
-import Information1 from './../Information/Information1/Information1';
-import Information2 from './../Information/Information2/Information2';
-import Information3 from './../Information/Information3/Information3';
+import Information1 from "./../Information/Information1/Information1";
+import Information2 from "./../Information/Information2/Information2";
+import Information3 from "./../Information/Information3/Information3";
 
 const BlogRoutes = () => {
-  const URL = "https://good-blue-leopard-gown.cyclic.app/";
-
   return (
     <div>
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />}></Route>
-          <Route path="/Bollywood" element={<Bollywood url={URL} />}></Route>
+          <Route path="/Bollywood" element={<Bollywood />}></Route>
           <Route path="/Technology" element={<Technology />}></Route>
           <Route path="/Hollywood" element={<Hollywood />}></Route>
           <Route path="/Fitness" element={<Fitness />}></Route>
