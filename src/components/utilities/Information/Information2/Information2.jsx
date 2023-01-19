@@ -1,14 +1,14 @@
 import ScrollToTop from "react-scroll-to-top";
 import Divider from "@mui/material/Divider";
-import NavbarWithBtn from "../../NavbarWithBtn/NavbarWithBtn";
-import LikeNshare from "../../LikeNshare/LikeNshare";
-import AuthorNsocial from "../../Author-N-Social/AuthorNsocial";
-import Author from "../../Author/Author";
-import Like from "../../LikeNshare/images/rythm.png";
+import NavbarWithBtn from "../../../NavbarWithBtn/NavbarWithBtn";
+import LikeNshare from "../../../LikeNshare/LikeNshare";
+import AuthorNsocial from "../../../Author-N-Social/AuthorNsocial";
+import Author from "../../../Author/Author";
+import Like from "../../../LikeNshare/images/rythm.png";
 import image1 from "../../ImageGallery/images/pexels-alexandre-saraiva-carniato-2258349.jpg";
 import video1 from "../Information2/production-ID-3891292.mp4";
 import "../Information1/Information1.css";
-import RelatedPosts from "../../RelatedPosts/RelatedPosts";
+import RelatedPosts from "../../../RelatedPosts/RelatedPosts";
 
 const Information2 = () => {
   return (

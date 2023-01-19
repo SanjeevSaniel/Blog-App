@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ScrollToTop from "react-scroll-to-top";
-import ImageGallery from "../ImageGallery/ImageGallery";
+import ImageGallery from "../utilities/ImageGallery/ImageGallery";
 import ArticlesHorizontal from "../ArticlesHorizontal/ArticlesHorizontal";
 import ArticlesVertical from "../ArticlesVertical/ArticlesVertical";
 import ImageSlideshow from "../ImageSlideShow/ImageSlideShow";

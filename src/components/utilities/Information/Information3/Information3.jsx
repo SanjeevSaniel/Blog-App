@@ -1,14 +1,14 @@
 import ScrollToTop from "react-scroll-to-top";
 import Divider from "@mui/material/Divider";
-import NavbarWithBtn from "../../NavbarWithBtn/NavbarWithBtn";
-import LikeNshare from "../../LikeNshare/LikeNshare";
-import AuthorNsocial from "../../Author-N-Social/AuthorNsocial";
-import Author from "../../Author/Author";
-import Like from "../../LikeNshare/images/rythm.png";
+import NavbarWithBtn from "../../../../components/NavbarWithBtn/NavbarWithBtn";
+import LikeNshare from "../../../../components/LikeNshare/LikeNshare";
+import AuthorNsocial from "../../../../components/Author-N-Social/AuthorNsocial";
+import Author from "../../../../components/Author/Author";
+import Like from "../../../LikeNshare/images/rythm.png";
 import image1 from "../../ImageGallery/images/pexels-photo-301738.jpeg";
-import video1 from "../Information3/pexels-creativ-medium-6929784.mp4";
+import video1 from "./pexels-creativ-medium-6929784.mp4";
 import "../Information1/Information1.css";
-import RelatedPosts from "../../RelatedPosts/RelatedPosts";
+import RelatedPosts from "../../../../components/RelatedPosts/RelatedPosts";
 
 const Information3 = () => {
   return (

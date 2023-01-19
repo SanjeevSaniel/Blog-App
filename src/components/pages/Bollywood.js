@@ -20,15 +20,12 @@ const Bollywood = ({ url }) => {
   }, [articles, url]);
 
   useEffect(() => {
-    fetchData("https://good-blue-leopard-gown.cyclic.app/BollywoodAds", setAds);
-  }, [ads]);
+    fetchData(`${url}BollywoodAds`, setAds);
+  }, [ads, url]);
 
   useEffect(() => {
-    fetchData(
-      "https://good-blue-leopard-gown.cyclic.app/BollywoodTopPosts",
-      setTopPosts
-    );
-  }, [topPosts]);
+    fetchData(`${url}BollywoodTopPosts`, setTopPosts);
+  }, [topPosts, url]);
 
   return (
     <div className="Bollywood">

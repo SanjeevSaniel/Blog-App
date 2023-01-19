@@ -1,9 +1,4 @@
-// const express = require("express");
-// const app = express();
-
-// app.put("/*", (req, res) => {
-//   res.status(400);
-// });
+import React from "react";
 
 const Error = () => {
   return (
