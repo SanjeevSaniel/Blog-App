@@ -26,6 +26,7 @@ const LoginForm = () => {
     return errors;
   };
 
+  // TODO: Field Validation
   const validateProperty = ({ name, value }) => {
     const obj = { [name]: value };
     const newSchema = { [name]: schema[name] };
@@ -44,6 +45,7 @@ const LoginForm = () => {
 
     if (errors) return;
 
+    //   Call the server
     console.log("Submitted");
   };
 
