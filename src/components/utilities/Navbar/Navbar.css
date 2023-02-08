@@ -47,6 +47,11 @@ html {
   font-weight: 600;
 }
 
+#login {
+  border: none;
+  font-size: 15px;
+}
+
 .error {
   display: flex;
   justify-content: center;

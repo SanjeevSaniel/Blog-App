@@ -5,11 +5,10 @@
 
 body {
   position: relative;
-  display: flex;
-  flex-flow: column;
-  align-content: center;
+}
+
+.App {
   margin: auto;
-  /* margin: 0 300px; */
   max-width: 1230px;
 }
 
