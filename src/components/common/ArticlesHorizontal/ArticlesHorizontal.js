@@ -2,12 +2,6 @@ import React from "react";
 import "../ArticlesHorizontal/ArticlesHorizontal.css";
 
 const ArticlesHorizontal = ({ articles }) => {
-  //   const [articlesData, setArticlesData] = useState([]);
-
-  //   useEffect(() => {
-  //     setArticlesData(articles);
-  //   }, [articles]);
-
   return (
     <main className="ah-main-container">
       <div className="ah-header">

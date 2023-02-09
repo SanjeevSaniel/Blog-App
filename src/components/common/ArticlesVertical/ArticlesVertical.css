@@ -184,9 +184,6 @@
   } */
 
   .ad-box {
-    /* grid-column: 2/3; */
-    /* position: absolute; */
-    /* right: 0; */
     position: relative;
     display: flex;
     justify-content: center;

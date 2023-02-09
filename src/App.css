@@ -20,3 +20,9 @@ body {
 .scroll-arrow:hover {
   box-shadow: 0 0 10px 5px rgb(209, 207, 207);
 }
+
+/* @media screen and (max-width: 900px) {
+  .scroll-arrow {
+    display: none;
+  }
+} */

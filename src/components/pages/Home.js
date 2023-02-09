@@ -9,6 +9,10 @@ import LatestStories from "../common/LatestStories/LatestStories";
 
 import { URLContext } from "../../App";
 
+const home = {
+  maxWidth: "auto",
+};
+
 const Home = () => {
   const URL = useContext(URLContext);
 
@@ -45,9 +49,10 @@ const Home = () => {
   }, [topPosts, URL]);
 
   return (
-    <div className="Home">
+    <div className="Home" style={home}>
       <ImageGallery />
       <ArticlesHorizontal articles={articlesHorizontal} />
+
       <ArticlesVertical
         articles={articlesVertical}
         ads={ads}

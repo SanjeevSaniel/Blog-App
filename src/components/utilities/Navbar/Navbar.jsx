@@ -149,6 +149,27 @@ const Navbar = () => {
                                 Food
                               </NavLink>
                             </MenuItem>
+
+                            <MenuItem onClick={handleClose}>
+                              <NavLink className="nav-links action" to="/Login">
+                                <button id="login" className="btn btn-primary">
+                                  Login
+                                </button>
+                              </NavLink>
+                            </MenuItem>
+                            <MenuItem onClick={handleClose}>
+                              <NavLink
+                                className="nav-links action"
+                                to="/Register"
+                              >
+                                <button
+                                  id="register"
+                                  className="btn btn-secondary"
+                                >
+                                  Register
+                                </button>
+                              </NavLink>
+                            </MenuItem>
                           </MenuList>
                         </ClickAwayListener>
                       </Paper>

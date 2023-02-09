@@ -82,9 +82,9 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="login-form">
+    <div id="register-form">
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Register</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="form-container" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="fullName">Name</label>
           <input

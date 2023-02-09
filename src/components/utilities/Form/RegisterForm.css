@@ -1,7 +1,12 @@
-.login-form {
+#register-form {
   font-size: 2rem;
   padding: 10rem;
-  margin: 5rem 30rem;
+  margin: auto;
+}
+
+.form-container {
+  margin: auto;
+  max-width: 30rem;
 }
 
 .form-group {
@@ -17,4 +22,15 @@ input[type="email"] {
   border: none;
   margin: 2rem 0;
   font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  #register-form {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .form-container {
+    margin: 0;
+  }
 }

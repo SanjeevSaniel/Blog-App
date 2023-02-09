@@ -94,7 +94,7 @@ const ArticlesVertical = ({
                   key={index}
                   title={data.title}
                   src={data.link}
-                  frameBorder="0"
+                  // frameBorder="0"
                 ></iframe>
               );
             })}

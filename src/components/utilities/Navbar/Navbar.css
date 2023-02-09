@@ -149,4 +149,8 @@ html {
   .app-bar {
     display: block;
   }
+
+  .action-buttons {
+    display: none;
+  }
 }
