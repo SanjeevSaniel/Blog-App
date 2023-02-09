@@ -15,6 +15,7 @@ import Information1 from "./../Information/Information1/Information1";
 import Information2 from "./../Information/Information2/Information2";
 import Information3 from "./../Information/Information3/Information3";
 import LoginForm from "./../Form/LoginForm";
+import RegisterForm from "./../Form/RegisterForm";
 
 const BlogRoutes = () => {
   return (
@@ -28,6 +29,7 @@ const BlogRoutes = () => {
           <Route path="/Fitness" element={<Fitness />}></Route>
           <Route path="/Food" element={<Food />}></Route>
           <Route path="/Login" element={<LoginForm />}></Route>
+          <Route path="/Register" element={<RegisterForm />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Route>
         <Route path="/Information1" element={<Information1 />}></Route>
