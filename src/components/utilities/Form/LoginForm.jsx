@@ -68,6 +68,7 @@ const LoginForm = () => {
 
   return (
     <div className="login-form">
+      <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Login</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="username">Username</label>
