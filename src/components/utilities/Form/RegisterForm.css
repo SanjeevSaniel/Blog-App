@@ -1,0 +1,20 @@
+.login-form {
+  font-size: 2rem;
+  padding: 10rem;
+  margin: 5rem 30rem;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 15px;
+}
+
+#btn-register {
+  border: none;
+  margin: 2rem 0;
+  font-size: 15px;
+}
