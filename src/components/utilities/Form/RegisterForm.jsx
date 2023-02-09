@@ -57,7 +57,7 @@ const RegisterForm = () => {
   };
 
   const registerUser = async () => {
-    const user = await axios.post(`${URL}user`, {
+    await axios.post(`${URL}user`, {
       name: account.fullName,
       email: account.email,
       password: account.password,
