@@ -201,12 +201,20 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="nav-links" to="/Login">
-              <button id="login" className="btn btn-primary">
-                Login
-              </button>
-            </NavLink>
+            <div className="action-buttons">
+              <NavLink className="nav-links action" to="/Login">
+                <button id="login" className="btn btn-primary">
+                  Login
+                </button>
+              </NavLink>
+              <NavLink className="nav-links action" to="/Register">
+                <button id="register" className="btn btn-secondary">
+                  Register
+                </button>
+              </NavLink>
+            </div>
           </li>
+          <li></li>
         </ul>
       </nav>
       <Divider variant="middle" />

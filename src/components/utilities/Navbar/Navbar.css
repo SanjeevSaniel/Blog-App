@@ -47,9 +47,19 @@ html {
   font-weight: 600;
 }
 
-#login {
+.action {
+  margin: 0 0.5rem;
+}
+
+#login,
+#register {
   border: none;
   font-size: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .error {
