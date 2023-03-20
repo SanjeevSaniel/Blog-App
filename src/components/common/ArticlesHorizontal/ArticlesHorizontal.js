@@ -1,5 +1,6 @@
 import React from "react";
 import "../ArticlesHorizontal/ArticlesHorizontal.css";
+import ExpandableText from "../ExpandableText";
 
 const ArticlesHorizontal = ({ articles }) => {
   return (
@@ -15,7 +16,7 @@ const ArticlesHorizontal = ({ articles }) => {
               <img className="ah-images" src={article.url} alt={article.alt} />
               <figcaption className="ah-images-caption">
                 <a className="ah-link" href={article.link}>
-                  {article.caption}
+                  <ExpandableText value={article.caption} maxChars={18} />
                 </a>
                 <p>{article.about}</p>
               </figcaption>
