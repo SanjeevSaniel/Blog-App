@@ -4,10 +4,10 @@
   margin: auto;
 }
 
-.form-container {
+/* .form-container {
   margin: auto;
   max-width: 30rem;
-}
+} */
 
 .form-group {
   margin-top: 1rem;
@@ -30,7 +30,7 @@ input[type="email"] {
     flex-flow: column;
   }
 
-  .form-container {
+  /* .form-container {
     margin: 0;
-  }
+  } */
 }

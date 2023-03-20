@@ -5,8 +5,8 @@ import "./App.css";
 import BlogRoutes from "./components/utilities/Routers/BlogRoutes";
 
 export const URLContext = createContext();
-// const URL = "https://good-blue-leopard-gown.cyclic.app/";
-const URL = "http://localhost:5000/";
+const URL = "https://good-blue-leopard-gown.cyclic.app/";
+// const URL = "http://localhost:5000/";
 
 function App() {
   return (

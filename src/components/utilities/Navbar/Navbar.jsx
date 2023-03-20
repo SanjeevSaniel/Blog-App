@@ -81,15 +81,7 @@ const Navbar = () => {
                   aria-haspopup="true"
                   onClick={handleToggle}
                 >
-                  {/* <span className="menu">
-                    <img
-                      className="menu-logo"
-                      src="./menu-bar.png"
-                      alt="Menu"
-                    />
-                  </span> */}
                   <span className="menu">☰</span>
-                  {/* <img className="menu-logo" src="../Navbar/hamburger.png" alt="Menu" /> */}
                 </Button>
 
                 <Popper
