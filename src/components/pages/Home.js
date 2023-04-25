@@ -29,23 +29,23 @@ const Home = () => {
   }
 
   useEffect(() => {
-    fetchData(`${URL}Articles`, setArticlesVertical);
+    fetchData(`${URL}/Articles`, setArticlesVertical);
   }, [articlesVertical, URL]);
 
   useEffect(() => {
-    fetchData(`${URL}HomeLatest`, setArticlesHorizontal);
+    fetchData(`${URL}/HomeLatest`, setArticlesHorizontal);
   }, [articlesHorizontal, URL]);
 
   useEffect(() => {
-    fetchData(`${URL}HomeSlider`, setImages);
+    fetchData(`${URL}/HomeSlider`, setImages);
   }, [images, URL]);
 
   useEffect(() => {
-    fetchData(`${URL}HomeAds`, setAds);
+    fetchData(`${URL}/HomeAds`, setAds);
   }, [ads, URL]);
 
   useEffect(() => {
-    fetchData(`${URL}HomeTopPosts`, setTopPosts);
+    fetchData(`${URL}/HomeTopPosts`, setTopPosts);
   }, [topPosts, URL]);
 
   return (

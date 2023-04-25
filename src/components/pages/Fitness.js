@@ -18,9 +18,9 @@ const Fitness = () => {
   }
 
   useEffect(() => {
-    fetchData(`${URL}FitnessArticles`, setArticles);
-    fetchData(`${URL}FitnessAds`, setAds);
-    fetchData(`${URL}FitnessTopPosts`, setTopPosts);
+    fetchData(`${URL}/FitnessArticles`, setArticles);
+    fetchData(`${URL}/FitnessAds`, setAds);
+    fetchData(`${URL}/FitnessTopPosts`, setTopPosts);
   }, [articles, ads, topPosts, URL]);
 
   return (

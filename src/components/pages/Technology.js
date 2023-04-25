@@ -18,9 +18,9 @@ const Technology = () => {
   }
 
   useEffect(() => {
-    fetchData(`${URL}TechnologyArticles`, setArticles);
-    fetchData(`${URL}TechnologyAds`, setAds);
-    fetchData(`${URL}TechnologyTopPosts`, setTopPosts);
+    fetchData(`${URL}/TechnologyArticles`, setArticles);
+    fetchData(`${URL}/TechnologyAds`, setAds);
+    fetchData(`${URL}/TechnologyTopPosts`, setTopPosts);
   }, [articles, ads, topPosts, URL]);
 
   return (

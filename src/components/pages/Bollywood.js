@@ -19,9 +19,9 @@ const Bollywood = () => {
   }
 
   useEffect(() => {
-    fetchData(`${URL}BollywoodArticles`, setArticles);
-    fetchData(`${URL}BollywoodAds`, setAds);
-    fetchData(`${URL}BollywoodTopPosts`, setTopPosts);
+    fetchData(`${URL}/BollywoodArticles`, setArticles);
+    fetchData(`${URL}/BollywoodAds`, setAds);
+    fetchData(`${URL}/BollywoodTopPosts`, setTopPosts);
   }, [articles, ads, topPosts, URL]);
 
   return (

@@ -18,9 +18,9 @@ const Food = () => {
   }
 
   useEffect(() => {
-    fetchData(`${URL}FoodArticles`, setArticles);
-    fetchData(`${URL}FoodAds`, setAds);
-    fetchData(`${URL}FoodTopPosts`, setTopPosts);
+    fetchData(`${URL}/FoodArticles`, setArticles);
+    fetchData(`${URL}/FoodAds`, setAds);
+    fetchData(`${URL}/FoodTopPosts`, setTopPosts);
   }, [articles, ads, topPosts, URL]);
 
   if (!articles || !ads || (!articles && !ads)) return null;

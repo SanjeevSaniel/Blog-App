@@ -18,8 +18,8 @@ const Hollywood = () => {
   }
 
   useEffect(() => {
-    fetchData(`${URL}HollywoodArticles`, setArticles);
-    fetchData(`${URL}HollywoodAds`, setAds);
+    fetchData(`${URL}/HollywoodArticles`, setArticles);
+    fetchData(`${URL}/HollywoodAds`, setAds);
     fetchData(
       "https://good-blue-leopard-gown.cyclic.app/HollywoodTopPosts",
       setTopPosts
