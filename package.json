@@ -2,7 +2,6 @@
   "name": "blog-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://good-blue-leopard-gown.cyclic.app/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -18,6 +17,7 @@
     "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
     "http": "^0.0.1-security",
+    "http-proxy-middleware": "^2.0.6",
     "joi-browser": "^13.4.0",
     "mdbreact": "^5.2.0",
     "net": "^1.0.2",
